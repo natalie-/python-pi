@@ -3,6 +3,9 @@
 # This program will blink an LED when you press a button. 
 # The LED defaults to *OFF* !!!
 
+# At some point, add control using the run variable within the
+# while loop.  Until then, CTRL-C to exit.  (24 Feb 15)
+
 import time
 
 try:
