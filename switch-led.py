@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
-# This program will blink an LED when you press a button. 
+# This program will switch an LED off and on when you press a button. 
 # The LED defaults to *OFF* !!!
 
-# At some point, add control using the run variable within the
-# while loop.  Until then, CTRL-C to exit.  (24 Feb 15)
+# At some point, add control using the run variable within the while loop.  
+# Until then, CTRL-C to exit.  (24 Feb 15)
 
 import time
 
@@ -18,19 +18,15 @@ GPIO.setwarnings(False)   # Silence cleanup warnings if CTRL-C is pressed
 
 GPIO.setup(17,GPIO.OUT)
 GPIO.setup(18,GPIO.IN,pull_up_down=GPIO.PUD_UP)
-GPIO.add_event_detect(18,GPIO.FALLING)
+GPIO.add_event_detect(18,GPIO.RISING)
 
 GPIO.output(17,GPIO.HIGH)  # Turn off LED
 
 run = 0
 
 while run == 0:
-    if(GPIO.input(18)) == GPIO.LOW:
-        GPIO.output(17,GPIO.LOW)   # Turn on LED
-        time.sleep(0.01)
-    elif(GPIO.input(18)) == GPIO.HIGH:
-        GPIO.output(17,GPIO.HIGH)  # Turn off LED
-        time.sleep(0.01)
+    if(GPIO.event_detected(18)):
+        GPIO.output(17, not GPIO.input(17))
     else:
         time.sleep(0.01)
 
