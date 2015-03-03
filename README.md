@@ -26,3 +26,10 @@ Demo:  [Video](http://youtu.be/brnC-m0cb90)
 
 Description:  LED controlled by a button acting as a switch.  Press the button, the LED turns off (if it is on) or on (if it is off).
 
+## 4 - 8 Blinking LEDs
+
+File:  8-led.py
+
+Demo [Video](http://youtu.be/EhjjGvgzfOs)
+
+Description:  8 LEDs blinking left to right.
