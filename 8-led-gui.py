@@ -8,10 +8,10 @@
 # Import all the things
 import time
 
-try:
-    import RPi.GPIO as GPIO
-except ImportError:
-    print("Error importing RPi.GPIO!  This is probably because you need superuser privileges.")
+# try:
+#     import RPi.GPIO as GPIO
+# except ImportError:
+#     print("Error importing RPi.GPIO!  This is probably because you need superuser privileges.")
 
 try:
     import wx
@@ -24,7 +24,7 @@ class MyFrame(wx.Frame):
         # begin wxGlade: MyFrame.__init__
         kwds["style"] = wx.DEFAULT_FRAME_STYLE
         wx.Frame.__init__(self, *args, **kwds)
-        
+
         # Menu Bar
         self.frame_1_menubar = wx.MenuBar()
         wxglade_tmp_menu = wx.Menu()
@@ -33,23 +33,22 @@ class MyFrame(wx.Frame):
         self.SetMenuBar(self.frame_1_menubar)
         # Menu Bar end
         self.frame_1_statusbar = self.CreateStatusBar(2, 0)
-        self.label_1 = wx.StaticText(self, wx.ID_ANY, _("LED On/Off"))
-        self.checkbox_1 = wx.CheckBox(self, wx.ID_ANY, _("checkbox_1"))
-        self.label_2 = wx.StaticText(self, wx.ID_ANY, _("LED 1"))
-        self.checkbox_2 = wx.CheckBox(self, wx.ID_ANY, _("checkbox_2"))
-        self.label_3 = wx.StaticText(self, wx.ID_ANY, _("LED 2"))
-        self.checkbox_3 = wx.CheckBox(self, wx.ID_ANY, _("checkbox_3"))
-        self.label_4 = wx.StaticText(self, wx.ID_ANY, _("LED 3"))
-        self.checkbox_4 = wx.CheckBox(self, wx.ID_ANY, _("checkbox_4"))
-        self.label_5 = wx.StaticText(self, wx.ID_ANY, _("LED 4"))
-        self.checkbox_5 = wx.CheckBox(self, wx.ID_ANY, _("checkbox_5"))
-        self.label_6 = wx.StaticText(self, wx.ID_ANY, _("LED 5"))
-        self.checkbox_6 = wx.CheckBox(self, wx.ID_ANY, _("checkbox_6"))
-        self.label_7 = wx.StaticText(self, wx.ID_ANY, _("LED 6"))
-        self.checkbox_7 = wx.CheckBox(self, wx.ID_ANY, _("checkbox_7"))
-        self.label_8 = wx.StaticText(self, wx.ID_ANY, _("LED 7"))
-        self.checkbox_8 = wx.CheckBox(self, wx.ID_ANY, _("checkbox_8"))
-        self.label_9 = wx.StaticText(self, wx.ID_ANY, _("LED 8"))
+        self.label_1 = wx.StaticText(self, wx.ID_ANY, _("   LED 1   "))
+        self.checkbox_1 = wx.CheckBox(self, wx.ID_ANY, _("LED 1"))
+        self.label_2 = wx.StaticText(self, wx.ID_ANY, _("   LED 2   "))
+        self.checkbox_2 = wx.CheckBox(self, wx.ID_ANY, _("LED 2"))
+        self.label_3 = wx.StaticText(self, wx.ID_ANY, _("   LED 3   "))
+        self.checkbox_3 = wx.CheckBox(self, wx.ID_ANY, _("LED 3"))
+        self.label_4 = wx.StaticText(self, wx.ID_ANY, _("   LED 4   "))
+        self.checkbox_4 = wx.CheckBox(self, wx.ID_ANY, _("LED 4"))
+        self.label_5 = wx.StaticText(self, wx.ID_ANY, _("   LED 5   "))
+        self.checkbox_5 = wx.CheckBox(self, wx.ID_ANY, _("LED 5"))
+        self.label_6 = wx.StaticText(self, wx.ID_ANY, _("   LED 6   "))
+        self.checkbox_6 = wx.CheckBox(self, wx.ID_ANY, _("LED 6"))
+        self.label_7 = wx.StaticText(self, wx.ID_ANY, _("   LED 7   "))
+        self.checkbox_7 = wx.CheckBox(self, wx.ID_ANY, _("LED 7"))
+        self.label_8 = wx.StaticText(self, wx.ID_ANY, _("   LED 8   "))
+        self.checkbox_8 = wx.CheckBox(self, wx.ID_ANY, _("LED 8"))
 
         self.__set_properties()
         self.__do_layout()
@@ -57,11 +56,11 @@ class MyFrame(wx.Frame):
 
     def __set_properties(self):
         # begin wxGlade: MyFrame.__set_properties
-        self.SetTitle(_("default"))
-        self.SetSize((700, 350))
+        self.SetTitle(_("LED On/Off"))
+        self.SetSize((1000, 500))
         self.frame_1_statusbar.SetStatusWidths([-1, -1])
         # statusbar fields
-        frame_1_statusbar_fields = [_("Created with wxGlade!"), _("Click the radio button to light the LED")]
+        frame_1_statusbar_fields = [_("top:bottom::left:right"), _("Click the checkbox to light the LED")]
         for i in range(len(frame_1_statusbar_fields)):
             self.frame_1_statusbar.SetStatusText(frame_1_statusbar_fields[i], i)
         # end wxGlade
@@ -85,7 +84,6 @@ class MyFrame(wx.Frame):
         grid_sizer_1.Add(self.checkbox_7, 0, wx.ADJUST_MINSIZE, 0)
         grid_sizer_1.Add(self.label_8, 0, wx.ADJUST_MINSIZE, 0)
         grid_sizer_1.Add(self.checkbox_8, 0, wx.ADJUST_MINSIZE, 0)
-        grid_sizer_1.Add(self.label_9, 0, wx.ADJUST_MINSIZE, 0)
         self.SetSizer(grid_sizer_1)
         grid_sizer_1.SetSizeHints(self)
         grid_sizer_1.AddGrowableCol(1)
