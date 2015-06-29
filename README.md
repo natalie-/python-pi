@@ -30,6 +30,6 @@ Description:  LED controlled by a button acting as a switch.  Press the button, 
 
 File:  8-led.py
 
-Demo [Video](http://youtu.be/EhjjGvgzfOs)
+Demo:  [Video](http://youtu.be/EhjjGvgzfOs)
 
 Description:  8 LEDs blinking left to right.
