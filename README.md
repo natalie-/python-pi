@@ -44,4 +44,4 @@ Description:  8 LEDs now controlled by checkboxes in a GUI.  GUI built with [pyg
 
 Screenshot:
 
-![GUI](https://github.com/natalie-/python-pi/screenshots/GUI.jpg "GUI screenshot")     ![Picture of breadboard](https://github.com/natalie-/python-pi/screenshots/breadboard.jpg "Picture of breadboard")
+![GUI](https://github.com/natalie-/python-pi/blob/master/screenshots/GUI.jpg "GUI screenshot")     ![Picture of breadboard](https://github.com/natalie-/python-pi/blob/master/screenshots/breadboard.jpg "Picture of breadboard")
