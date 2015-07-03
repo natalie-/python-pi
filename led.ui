@@ -2,6 +2,7 @@
 <interface>
   <object class="ttk.Frame" id="mainwindow">
     <property name="height">300</property>
+    <property name="padding">25</property>
     <property name="width">150</property>
     <layout>
       <property name="column">0</property>
@@ -10,11 +11,13 @@
     </layout>
     <child>
       <object class="ttk.Checkbutton" id="Checkbutton_1">
-        <property name="offvalue">off</property>
-        <property name="onvalue">on</property>
+        <property name="command">onLed1</property>
         <property name="text" translatable="yes">LED 1</property>
+        <property name="variable">int:Led1</property>
         <layout>
           <property name="column">0</property>
+          <property name="padx">5</property>
+          <property name="pady">2</property>
           <property name="propagate">True</property>
           <property name="row">1</property>
         </layout>
@@ -22,11 +25,13 @@
     </child>
     <child>
       <object class="ttk.Checkbutton" id="Checkbutton_2">
-        <property name="offvalue">off</property>
-        <property name="onvalue">on</property>
+        <property name="command">onLed2</property>
         <property name="text" translatable="yes">LED 2</property>
+        <property name="variable">int:Led2</property>
         <layout>
           <property name="column">0</property>
+          <property name="padx">5</property>
+          <property name="pady">2</property>
           <property name="propagate">True</property>
           <property name="row">2</property>
         </layout>
@@ -34,11 +39,13 @@
     </child>
     <child>
       <object class="ttk.Checkbutton" id="Checkbutton_3">
-        <property name="offvalue">off</property>
-        <property name="onvalue">on</property>
+        <property name="command">onLed3</property>
         <property name="text" translatable="yes">LED 3</property>
+        <property name="variable">int:Led3</property>
         <layout>
           <property name="column">0</property>
+          <property name="padx">5</property>
+          <property name="pady">2</property>
           <property name="propagate">True</property>
           <property name="row">3</property>
         </layout>
@@ -46,11 +53,13 @@
     </child>
     <child>
       <object class="ttk.Checkbutton" id="Checkbutton_4">
-        <property name="offvalue">off</property>
-        <property name="onvalue">on</property>
+        <property name="command">onLed4</property>
         <property name="text" translatable="yes">LED 4</property>
+        <property name="variable">int:Led4</property>
         <layout>
           <property name="column">0</property>
+          <property name="padx">5</property>
+          <property name="pady">2</property>
           <property name="propagate">True</property>
           <property name="row">4</property>
         </layout>
@@ -58,11 +67,13 @@
     </child>
     <child>
       <object class="ttk.Checkbutton" id="Checkbutton_5">
-        <property name="offvalue">off</property>
-        <property name="onvalue">on</property>
+        <property name="command">onLed5</property>
         <property name="text" translatable="yes">LED 5</property>
+        <property name="variable">int:Led5</property>
         <layout>
           <property name="column">0</property>
+          <property name="padx">5</property>
+          <property name="pady">2</property>
           <property name="propagate">True</property>
           <property name="row">5</property>
         </layout>
@@ -70,11 +81,13 @@
     </child>
     <child>
       <object class="ttk.Checkbutton" id="Checkbutton_6">
-        <property name="offvalue">off</property>
-        <property name="onvalue">on</property>
+        <property name="command">onLed6</property>
         <property name="text" translatable="yes">LED 6</property>
+        <property name="variable">int:Led6</property>
         <layout>
           <property name="column">0</property>
+          <property name="padx">5</property>
+          <property name="pady">2</property>
           <property name="propagate">True</property>
           <property name="row">6</property>
         </layout>
@@ -82,11 +95,13 @@
     </child>
     <child>
       <object class="ttk.Checkbutton" id="Checkbutton_7">
-        <property name="offvalue">off</property>
-        <property name="onvalue">on</property>
+        <property name="command">onLed7</property>
         <property name="text" translatable="yes">LED 7</property>
+        <property name="variable">int:Led7</property>
         <layout>
           <property name="column">0</property>
+          <property name="padx">5</property>
+          <property name="pady">2</property>
           <property name="propagate">True</property>
           <property name="row">7</property>
         </layout>
@@ -94,11 +109,13 @@
     </child>
     <child>
       <object class="ttk.Checkbutton" id="Checkbutton_8">
-        <property name="offvalue">off</property>
-        <property name="onvalue">on</property>
+        <property name="command">onLed8</property>
         <property name="text" translatable="yes">LED 8</property>
+        <property name="variable">int:Led8</property>
         <layout>
           <property name="column">0</property>
+          <property name="padx">5</property>
+          <property name="pady">2</property>
           <property name="propagate">True</property>
           <property name="row">8</property>
         </layout>
@@ -110,6 +127,8 @@
         <property name="text" translatable="yes">Quit</property>
         <layout>
           <property name="column">0</property>
+          <property name="padx">10</property>
+          <property name="pady">10</property>
           <property name="propagate">True</property>
           <property name="row">9</property>
         </layout>
@@ -118,12 +137,18 @@
     <child>
       <object class="tk.Message" id="Message_2">
         <property name="cursor">arrow</property>
+        <property name="font">TkDefaultFont</property>
+        <property name="justify">center</property>
+        <property name="padx">5</property>
+        <property name="pady">5</property>
         <property name="relief">flat</property>
         <property name="text" translatable="yes">LEDs are listed from top to bottom</property>
+        <property name="width">120</property>
         <layout>
           <property name="column">0</property>
           <property name="propagate">True</property>
           <property name="row">0</property>
+          <property name="sticky">n</property>
         </layout>
       </object>
     </child>

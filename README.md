@@ -33,3 +33,15 @@ File:  8-led.py
 Demo:  [Video](http://youtu.be/EhjjGvgzfOs)
 
 Description:  8 LEDs blinking left to right.
+
+## 5 - 8 LEDs with a GUI
+
+Files:  8-led-gui.py, led.ui
+
+Demo:  [Video](https://www.youtube.com/watch?v=dQXv1FyIoSA)
+
+Description:  8 LEDs now controlled by checkboxes in a GUI.  GUI built with [pygubu](https://github.com/alejandroautalan/pygubu).
+
+Screenshot:
+
+![GUI](https://github.com/natalie-/python-pi/screenshots/GUI.jpg "GUI screenshot")     ![Picture of breadboard](https://github.com/natalie-/python-pi/screenshots/breadboard.jpg "Picture of breadboard")
