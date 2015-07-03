@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="mainwindow">
+    <property name="height">300</property>
+    <property name="width">150</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Checkbutton" id="Checkbutton_1">
+        <property name="offvalue">off</property>
+        <property name="onvalue">on</property>
+        <property name="text" translatable="yes">LED 1</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Checkbutton" id="Checkbutton_2">
+        <property name="offvalue">off</property>
+        <property name="onvalue">on</property>
+        <property name="text" translatable="yes">LED 2</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Checkbutton" id="Checkbutton_3">
+        <property name="offvalue">off</property>
+        <property name="onvalue">on</property>
+        <property name="text" translatable="yes">LED 3</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">3</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Checkbutton" id="Checkbutton_4">
+        <property name="offvalue">off</property>
+        <property name="onvalue">on</property>
+        <property name="text" translatable="yes">LED 4</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Checkbutton" id="Checkbutton_5">
+        <property name="offvalue">off</property>
+        <property name="onvalue">on</property>
+        <property name="text" translatable="yes">LED 5</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">5</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Checkbutton" id="Checkbutton_6">
+        <property name="offvalue">off</property>
+        <property name="onvalue">on</property>
+        <property name="text" translatable="yes">LED 6</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">6</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Checkbutton" id="Checkbutton_7">
+        <property name="offvalue">off</property>
+        <property name="onvalue">on</property>
+        <property name="text" translatable="yes">LED 7</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">7</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Checkbutton" id="Checkbutton_8">
+        <property name="offvalue">off</property>
+        <property name="onvalue">on</property>
+        <property name="text" translatable="yes">LED 8</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">8</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="quit_button">
+        <property name="command">onQuitButtonClick</property>
+        <property name="text" translatable="yes">Quit</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">9</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Message" id="Message_2">
+        <property name="cursor">arrow</property>
+        <property name="relief">flat</property>
+        <property name="text" translatable="yes">LEDs are listed from top to bottom</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
