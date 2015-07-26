@@ -62,6 +62,17 @@ Screenshot:
 
 ![GUI](https://github.com/natalie-/python-pi/blob/master/screenshots/GUI.jpg "GUI screenshot")     ![Picture of breadboard](https://github.com/natalie-/python-pi/blob/master/screenshots/breadboard.jpg "Picture of breadboard")
 
+## 6 - One RGB LED
+
+File:  rgb-led.py
+
+Demo:  [Video](https://www.youtube.com/watch?v=CdU0b_Pm4rE)
+
+Diagram:  [Source file](https://github.com/natalie-/python-pi/blob/master/breadboard/rgb-led.fzz)
+
+![Diagram](https://github.com/natalie-/python-pi/blob/master/breadboard/rgb-led.png)
+
+Description:  A single RGB LED that blinks red/green/blue/white 10 times, then exits.
 
 
 Diagrams made using [Fritzing](http://fritzing.org/download/).
