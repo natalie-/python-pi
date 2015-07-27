@@ -74,5 +74,15 @@ Diagram:  [Source file](https://github.com/natalie-/python-pi/blob/master/breadb
 
 Description:  A single RGB LED that blinks red/green/blue/white 10 times, then exits.
 
+## 7 - Random colors on one RGB LED
+
+File:  random-color.py
+
+Demo:  [Video](https://www.youtube.com/watch?v=09hB7dvITEk)
+
+Diagram:  This one uses the same diagram as the one RGB LED
+
+Description:  Random colors fading one to the next on one RGB LED.
+
 
 Diagrams made using [Fritzing](http://fritzing.org/download/).
