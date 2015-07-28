@@ -84,5 +84,14 @@ Diagram:  This one uses the same diagram as the one RGB LED
 
 Description:  Random colors fading one to the next on one RGB LED.
 
+## 8 - Random colors on one RGB LED (now with functions)
+
+File:  
+
+Demo:  Same as above.
+
+Diagram:  This one uses the same diagram as the one RGB LED
+
+Description:  Random colors fading one to the next on one RGB LED, controlled by functions.
 
 Diagrams made using [Fritzing](http://fritzing.org/download/).
