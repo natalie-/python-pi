@@ -86,7 +86,7 @@ Description:  Random colors fading one to the next on one RGB LED.
 
 ## 8 - Random colors on one RGB LED (now with functions)
 
-File:  
+File:  random-color-2.py
 
 Demo:  Same as above.
 
