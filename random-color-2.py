@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-# This program will change a single RGB LED to random colors over time, resulting in a "breathing" effect.
-# The LED defaults to *OFF* !!!
+# This program will change a single RGB LED to random colors over time,
+# resulting in a "breathing" effect.  The LED defaults to *OFF* !!!
 
 
 from time import sleep
@@ -11,7 +11,8 @@ try:
     import RPi.GPIO as GPIO
 except RuntimeError:
     print(
-        "Error importing RPi.GPIO!  This is probably because you need superuser privileges.  You can achieve this by using 'sudo' to run your script.")
+        "Error importing RPi.GPIO!  This is probably because you need superuser\
+        privileges.  You can achieve this by using 'sudo' to run your script.")
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)   # Silence cleanup warnings if CTRL-C is pressed
@@ -29,6 +30,8 @@ greenPin.start(0)
 bluePin.start(0)
 
 # Functions
+
+
 def new():
     ''' Generate new random color '''
     new.redValue = randrange(0, 100, 1)
@@ -77,7 +80,8 @@ def main():
             new()
             fade()
             old()
-            # print(new.redValue, new.greenValue, new.blueValue)  # print colors for debugging if needed
+            # print(new.redValue, new.greenValue, new.blueValue)
+            # prints colors to terminal for debugging if needed
         except (KeyboardInterrupt):
             print ("Keyboard Interrupt, exiting.")
             GPIO.output([17, 18, 27], GPIO.LOW)
