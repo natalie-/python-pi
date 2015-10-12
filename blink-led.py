@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# This program will blink an LED at an interval for a set number of times. 
+# This program will blink an LED at an interval for a set number of times.
 # The LED defaults to *OFF* !!!
 
 import time
@@ -13,7 +13,7 @@ except RuntimeError:
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)   # Silence cleanup warnings if CTRL-C is pressed
 
-GPIO.setup(17,GPIO.OUT)
+GPIO.setup(17, GPIO.OUT)
 
 count = 0
 
@@ -23,9 +23,9 @@ interval = input("How long should each blink be? (milliseconds)   ", )
 interval = int(interval) / 1000
 
 while count < countmax:
-    GPIO.output(17,GPIO.HIGH)  # LED off
+    GPIO.output(17, GPIO.HIGH)  # LED off
     time.sleep(interval)
-    GPIO.output(17,GPIO.LOW)   # LED on
+    GPIO.output(17, GPIO.LOW)   # LED on
     time.sleep(interval)
     count = count + 1
 

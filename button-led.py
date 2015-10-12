@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# This program will blink an LED when you press a button. 
+# This program will blink an LED when you press a button.
 # The LED defaults to *OFF* !!!
 
 # At some point, add control using the run variable within the
@@ -16,22 +16,22 @@ except RuntimeError:
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)   # Silence cleanup warnings if CTRL-C is pressed
 
-GPIO.setup(17,GPIO.OUT)
-GPIO.setup(18,GPIO.IN,pull_up_down=GPIO.PUD_UP)
+GPIO.setup(17, GPIO.OUT)
+GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-GPIO.output(17,GPIO.HIGH)  # Turn off LED
+GPIO.output(17, GPIO.HIGH)  # Turn off LED
 
 run = 0
 
 while run == 0:
     if(GPIO.input(18)) == GPIO.LOW:
-        GPIO.output(17,GPIO.LOW)   # Turn on LED
+        GPIO.output(17, GPIO.LOW)   # Turn on LED
         time.sleep(0.01)
     elif(GPIO.input(18)) == GPIO.HIGH:
-        GPIO.output(17,GPIO.HIGH)  # Turn off LED
+        GPIO.output(17, GPIO.HIGH)  # Turn off LED
         time.sleep(0.01)
     else:
         time.sleep(0.01)
 
-GPIO.cleanup([17,18])   # clean the channels
+GPIO.cleanup([17, 18])   # clean the channels
 exit(0)
